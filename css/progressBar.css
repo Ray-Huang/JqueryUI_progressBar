@@ -1,0 +1,27 @@
+/* popup */
+.popup {width: 90%; height: 320px; position: relative; left: auto; top: 25%; margin: 0 auto; padding: 10px; background-color: #FFF;}
+
+/* progress bar */
+.progress-container {width: 86%; margin: 0 auto;}
+.progress-container h1 {text-align: left; margin-bottom: 25px; margin-top: 15px;}
+.progress {height: 40px; margin-bottom: 13px; border-radius: 0; position: relative;}
+.progress .ui-widget-header {background: url("../img/progressing.png") repeat-x scroll 50% 50%;}
+.progress.completed .ui-widget-header{background: url("../img/completed.png") repeat-x scroll 50% 50%;}
+.progress-value {position: absolute; left: 45%; top: 25%; font-weight: bold; font-size: 1.3em;}
+
+/* toolbar */
+.toolbar {text-align: left;}
+.toolbar > div {display: inline-block; vertical-align: top; height: 26px;}
+.toolbar > div:first-child {width: 37%;}
+
+select+span {width: 100% !important;}
+/* Styles for screens that are at least 480px*/
+@media only screen and (min-width: 30em){
+	.popup {width: 416px;}
+	
+	/* progress bar */
+	.progress-container {width: 300px;}
+	
+	/* toolbar */
+	.toolbar > div:first-child {width: auto;}
+}

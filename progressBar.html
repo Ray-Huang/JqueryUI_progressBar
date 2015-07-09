@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Progress Bar</title>
+		<!-- meta -->
+		<meta name="viewport" content="width=device-width" />
+		<meta http-equiv="Cache-Control" content="no-transform" />
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+		<!-- styles -->
+		<link type="text/css" rel="stylesheet" href="css/lib/jquery-ui.css" media="screen, projection" />
+		<link type="text/css" rel="stylesheet" href="css/global.css" media="screen, projection" />
+		<link type="text/css" rel="stylesheet" href="css/progressBar.css" media="screen, projection" />
+		
+		<!--[if IE 8]>
+		<link rel="stylesheet" type="text/css" href="css/ie8.css" />
+		<![endif]-->
+		
+		<!-- script -->
+		<script type="text/javascript" src="js/lib/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="js/lib/jquery-ui.js"></script>
+		<script type="text/javascript" src="js/progressBar.js"></script>
+	</head>
+	<body>
+		<div id="content"></div>
+		<div id="overlay">
+			<div class="popup">
+				<div class="progress-container">
+					<div class="title">
+						<h1>Progress Bars Demo</h1>
+					</div>
+					<div id="bar1" class="progress cur">
+						<div class="progress-value" data-value="25"></div>
+					</div>
+					<div id="bar2" class="progress">
+						<div class="progress-value" data-value="50"></div>
+					</div>
+					<div id="bar3" class="progress">
+						<div class="progress-value" data-value="75"></div>
+					</div>
+					<div class="toolbar">
+						<div>
+							<select>
+								<option selected="selected" value="bar1">#progress1</option>
+								<option value="bar2">#progress2</option>
+								<option value="bar3">#progress3</option>
+							</select>
+						</div>
+						<div>
+							<input type="button" value="-25">
+						</div>
+						<div>
+							<input type="button" value="-10">
+						</div>
+						<div>
+							<input type="button" value="+10">
+						</div>
+						<div>
+							<input type="button" value="+25">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
